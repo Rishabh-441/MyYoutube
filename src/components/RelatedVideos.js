@@ -19,7 +19,7 @@ const RelatedVideos = (content) => {
         <Link to={`/watch?v=${videoId}`}>
           <div className="flex items-center px-3 py-2 w-full rounded overflow-hidden shadow-md border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-300 m-2">
               <img
-                  className="w-40 object-contain rounded-lg" // Will fit without cropping
+                  className="object-contain rounded-lg" // Will fit without cropping
                   src={thumbnails?.high.url}
                   alt={title || channelTitle}
               />
