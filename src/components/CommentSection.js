@@ -145,7 +145,7 @@ const CommentSection = ({vidId}) => {
             </div> */}
             <h1 className='text-2xl font-bold mb-6'>Comments : </h1>
             <div>
-                {vidComments?.map((comment, index) => {
+                {vidComments.map((comment, index) => {
                     return (<Comment key={index} commentData={comment}/>)
                 })}
             </div>

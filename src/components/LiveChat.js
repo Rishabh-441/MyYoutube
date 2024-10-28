@@ -26,7 +26,7 @@ const LiveChat = () => {
         </div>
         <div className='h-[400px] p-2 overflow-y-scroll flex-col-reverse'>
           {
-            [...messages].reverse()?.map(({name, message}, index) => (
+            [...messages].reverse().map(({name, message}, index) => (
               <LiveMessage key={index} name={name} message={message} />
             ))
           }
